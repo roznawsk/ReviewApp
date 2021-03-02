@@ -1,0 +1,13 @@
+{% extends 'courses/base.html' %}
+
+{% block content %}
+  <h2>Login</h2>
+  <form method="post">
+    <label for="username">Username: </label>
+    <input id="username" type="text" name="username" value="{{ username }}">
+    <label for="password">Username: </label>
+    <input id="password" type="text" name="password" value="{{ password }}">
+    {% csrf_token %}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'courses/base.html' %}
+
+{% block content %}
+  <h2>Home</h2>
+    {% for section in sections  %}
+        <li>{{ section }}</li>
+    {% endfor %}
+{% endblock %}
